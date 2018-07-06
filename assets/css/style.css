@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#top-content {
+    position: relative;
+}
+
+.content-inner {
+    position: absolute;
+    top:0;
+    left:15px;
+    right: 15px;
+    display: block;
+}
+.video-background-container{
+    width: 50%;
+}
+
+.video-background-container img { width: 100%}
+
+.logo {
+    margin: 15px 0px 0px 10px;
+}
+.navbar { padding : 0px; padding-right: 20px;}
+.navbar-light .navbar-nav .nav-item { margin-left: 35px }
+.navbar-light .navbar-nav .nav-link{ color: #FFF; font-size: 15px}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+.slider{ display: flex; margin-top: 140px}
+.slider > div:first-child {
+    width: 45%;
+}
+
+.slider > div:last-child { flex:1}
+
+.slider h1 {
+    color: #3DAADF;
+    font-weight: 600;
+    font-size:40px;
+}
+
+.slider h2 {
+    color: #465C72;
+    font-size:30px;
+    margin: 60px 0px 15px 0px;
+}
+
+.slider .line{
+    width: 80px;
+    height: 8px;
+    background-color: #2a648e;
+    box-shadow: 0 3px 5px 0 rgba(61, 170, 223, 0.25);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.slider p {
+    font-size: 20px;
+    line-height: 1.52;
+    color: #465c72;
+}
+.btn {
+    border-radius: 15px;
+    background-color: #3daadf;
+    box-shadow: 0 8px 16px 0 rgba(61, 170, 223, 0.25);
+    font-size:13px;
+    line-height: 1;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #ffffff;
+    padding: 8px 25px;
+}
+.slider button {
+    margin-top:20px;
+    padding: 14px 25px;
+    font-size:18px;
+    border-radius: 15px;
+    background-image: linear-gradient(283deg, #70d5f1, #3daadf);
+    box-shadow: 0 8px 16px 0 rgba(61, 170, 223, 0.25);
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    outline: none;
+}
+.slider button img {
+    width: 20px;
+    height: 21px;
+    object-fit: contain;
+    margin-left: 15px;
+}
+
+.slider .play {
+    margin-left: auto;
+    display: block;
+    margin-right: 190px;
+    margin-top: 60px;
+    width: 60px;
+    height: 60px;
+
+}
+
+#catering {
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#catering > div:first-child {
+    width: 35%;
+    padding-right: 20px;
+}
+#catering > div:last-child {
+    flex:1;
+    min-height:200px;
+    position: relative;
+}
+
+#catering > div:last-child::before{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    border-radius: 2.4px;
+    background-image: linear-gradient(100deg, rgba(42, 151, 204, 0.58), #a4d2fb);
+}
+
+#catering h3 {
+  font-size: 40px;
+  color: #000000;
+}
+#catering h4 {
+    font-size: 30px;
+    line-height: 1;
+    color: #70d5f1;
+}
+#catering > div:first-child p {
+    font-size: 14px;
+    line-height: 1.3;
+    color: rgba(0, 0, 0, 0.57);
+}
+#catering .book-now {
+    display: flex;
+    align-items: center;
+}
+#catering .book-now span {
+    font-size: 12px;
+  font-weight: 600;
+  color: #333333;
+}
+#catering .book-now button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border:none;
+    background-image: linear-gradient(313deg, #70d5f1, #3daadf);
+    margin-left: 10px;
+}
+
+#catering .box-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#catering .box{
+    width: 200px;
+    min-height: 50px;
+    height: auto;
+    border-radius: 3.8px;
+    background-color: #ffffff;
+    background-color: var(--white);
+    box-shadow: 0 34px 54px 0 rgba(0, 0, 0, 0.09);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#catering .box img { width: 100px}
+#catering .box p {
+    font-size: 13px;
+    text-align: center;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.57);
+    padding-top: 20px;
+}
+
+#our-menu {
+    padding: 35px 30px;
+    min-height: 400px;
+    background-image: linear-gradient(113deg, rgba(238, 238, 238, 0.15), rgba(216, 216, 216, 0.25));
+}
+
+#our-menu h3 {
+    font-size: 25px;
+    text-align: center;
+    color: #4a4a4a;
+}
+
+#our-menu p {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    color: #999999;
+}
+
+#our-menu .row {
+    margin-top: 70px;
+}
+#our-menu .row div {
+    text-align: center;
+}
+#our-menu img {
+    width: 155px;
+    margin-bottom: 20px;
+}
+
+#our-menu .sub-title {
+    font-size: 16px;
+    line-height: 1.52;
+    text-align: center;
+    color: #333333;
+}
+#our-menu .row p {
+    font-size: 14px;
+    line-height: 1.49;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: #999999;
+}
+
+#our-menu .box {
+    max-width: 200px;
+}
+
+#contact {
+    padding: 35px 30px;
+    min-height: 400px;
+    background-image: linear-gradient(113deg, rgba(238, 238, 238, 0.15), rgba(216, 216, 216, 0.25));
+}
+#contact h3 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    color: #333333;
+}
+
+#contact p {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    color: #999999;
+}
+
+#contact .address {
+    font-size: 12px;
+    color: #000000;
+}
+#contact .address div {
+    padding: 10px 0px;
+}
+#contact .address i {
+    color: #b2bac4;
+    margin-right: 20px;
+}
+#contact .address h5 {
+    font-size: 20px;
+    color: #2e3035;
+    padding-bottom: 15px;
+}
+
+
+#contact .contact-form label, #contact .contact-form input, #contact .contact-form textarea {
+    font-size: 12px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    color: #2b3d51;
+}
+#contact .contact-form label {
+    font-weight: 600;
+}
+#contact .contact-form input {
+    border: 1px solid #b2bac4;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+#contact .contact-form .input-group>.custom-select:not(:first-child), #contact .contact-form .input-group>.form-control:not(:first-child) {
+    border-radius: 0px 5px 5px 0px;
+}
+
+#contact .contact-form .form-control::-webkit-input-placeholder {
+    color: #b2bac4;
+  }
+
+#contact .contact-form input:focus, #contact .contact-form textarea:focus {
+    border-color: #b2bac4;
+    box-shadow: none;
+    outline: 0 none;
+}
+#contact .contact-form .input-group-text { 
+    background-color: #FFF;
+    border: 1px solid #b2bac4;
+    border-radius: 5px 0px 0px 5px;
+}
+#contact .contact-form .input-group-text > i { color: #b2bac4}
+footer {
+    height: 210px;
+    padding-top: 50px;
+    background-image: linear-gradient(97deg, rgba(42, 151, 204, 0.58), #a4d2fb);
+}
+
+footer .footer-logo p{
+    color:#FFF;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+}
+footer .footer-logo p:last-child{
+    font-size:10px;
+    line-height: 1.64;
+    letter-spacing: 0.1px;
+    padding-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    display: block;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+footer ul li {
+    float: left;
+    margin-right: 30px;
+}
+
+footer ul li a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.datepicker {
+    margin-top: 30px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    border: solid 1px #b2bac4;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:normal;
+    line-height: 1.5;
+    color: #354052;
+}
+.datepicker-switch, .dow{
+    font-weight: 600;
+}
+.dow {
+    font-size: 10px;
+    line-height: 1.4;
+    color: #7f8fa4;
+}
+.day {
+    line-height: 1.5;
+    color: #354052;
+}
+.old.day {
+    line-height: 1.5;
+}
+.day.active {
+    border-radius: 50%;
+    border-color: transparent !important;
+    background-color: #1991eb !important;
+    text-shadow: none !important;
+    background-image: none !important;
+}
+.datepicker thead tr:last-child{
+    border-top: 1px solid #dfe3e9;
+    height: 35px;
+}
+.datepicker thead tr:nth-child(0){
+    height: 33px;
+}
+.datepicker tbody {
+    margin-right: 50px;
+}
+.datepicker td, .datepicker th {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    vertical-align: center;
+}
+.datepicker table {
+    width: 100%;
+}
+
+#pizza-menu {
+    min-height:300px; 
+    background-color: white;
+    padding: 50px 0px;
+}
+
+#pizza-menu h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #55708a;
+}
+
+#pizza-menu p {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.8px;
+    color: #2a648e;
+    padding: 0px;
+    margin: 0px;
+    padding-right: 20px;
+}
+#pizza-menu p.title-info{
+    color: #465c72;
+    margin-bottom: 40px; 
+    font-weight: normal;
+}
+#pizza-menu p.title {
+    font-weight: 600;
+    margin-top: 20px;
+}
