@@ -33,6 +33,7 @@ app.post('/contact-form', (req, res) => {
         html: `<div><b>Name:</b> ${req.body.firstName} ${req.body.lastName}</div>`
         + `<div><b>Email:</b> ${req.body.email}</div>`
         + `<div><b>Phone:</b> ${req.body.phone}</div>`
+        + `<div><b>Date:</b> ${req.body.date}</div>`
         + `<div><b>Message:</b> ${req.body.message}</div>`
     };
 
